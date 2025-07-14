@@ -34,28 +34,6 @@ body{
 }
 
 
-/* Smooth transition for navbar */
-.navbar {
-  transition: all 0.5s ease-in;
-}
-
-/* Navbar background and text on hover */
-    .navbar:hover {
-    background-color: rgb(24, 23, 23) !important;
-    }
-    /* Nav link hover color override */
-    .navbar:hover .nav-link:hover {
-    color: red !important;
-    }
-
-    .navbar:hover .nav-link,
-    .navbar:hover h3,
-    .navbar:hover .navbar-brand {
-    color: white !important;
-    }
-
-
-
 /* Footer */
 .f-info-links a {
     text-decoration: none;
