@@ -1,0 +1,57 @@
+    <% layout("/layouts/boilerplate") %>
+
+    <!-- ✅ FLASH MESSAGES -->
+    <% if (success && success.length > 0) { %>
+    <div class="alert alert-success alert-dismissible fade show text-center mb-0" role="alert">
+        <%= success %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <% } %>
+
+    <% if (error && error.length > 0) { %>
+    <div class="alert alert-danger alert-dismissible fade show text-center mb-0" role="alert">
+        <%= error %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <% } %>
+
+    <!-- ✅ Signup Form -->
+    <div class="container pt-5 pb-5">
+    <div class="row">
+        <h1 class="text-center mb-4">Sign Up on StayNest</h1>
+
+        <div class="col-md-6 offset-md-3">
+        <form action="/signup" method="POST" class="needs-validation" novalidate>
+            <!-- Username -->
+            <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" id="username" name="username" required class="form-control" />
+            <div class="invalid-feedback">Please enter a valid username.</div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" required class="form-control" />
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" name="password" required class="form-control" />
+            <div class="invalid-feedback">Please enter a password.</div>
+            </div>
+
+            <!-- Submit -->
+            <div class="d-grid">
+            <button class="btn btn-success">Sign Up</button>
+            </div>
+        </form>
+
+        <div class="text-center mt-3">
+            <p>Already have an account? <a href="/login">Login here</a></p>
+        </div>
+        </div>
+    </div>
+    </div>

@@ -1,0 +1,162 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.collapse navbar-collapse{
+    margin-right: 20px !important;
+}
+
+.container{
+    flex: 1 ;
+}
+
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+
+/* Smooth transition for navbar */
+.navbar {
+  transition: all 0.5s ease-in;
+}
+
+/* Navbar background and text on hover */
+    .navbar:hover {
+    background-color: rgb(24, 23, 23) !important;
+    }
+    /* Nav link hover color override */
+    .navbar:hover .nav-link:hover {
+    color: red !important;
+    }
+
+    .navbar:hover .nav-link,
+    .navbar:hover h3,
+    .navbar:hover .navbar-brand {
+    color: white !important;
+    }
+
+
+
+/* Footer */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links, .f-info-socials, .f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info {
+    text-align: center;
+    background-color: #ebebeb;
+    height: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/*card*/
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1) !important;
+    transition: box-shadow 0.3s ease !important;
+    position: relative !important;
+}
+
+.card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400 !important;
+}
+
+/* Card Link */
+.listing-link {
+    text-decoration: none !important;
+    color: inherit !important;
+    transition: transform 0.2s ease-in-out !important;
+}
+
+.listing-link:hover {
+    transform: scale(1.02) !important;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2 !important;
+    background-color: antiquewhite;
+}
+
+.edit-btn{
+        background-color: #fe424d !important;
+    border: none !important;
+}
+
+.show-img{
+    height: 5 0vh;
+}
+
+
+.review-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-in-out;
+  }
+
+  .review-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .small-card-img {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}

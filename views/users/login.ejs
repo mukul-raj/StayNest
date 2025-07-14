@@ -1,0 +1,43 @@
+<% layout("/layouts/boilerplate") %>
+
+<!-- Flash Messages -->
+<% if (success && success.length > 0) { %>
+  <div class="alert alert-success alert-dismissible fade show w-100 text-center mb-0" role="alert">
+    <%= success %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
+<% } %>
+
+<% if (error && error.length > 0) { %>
+  <div class="alert alert-danger alert-dismissible fade show w-100 text-center mb-0" role="alert">
+    <%= error %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
+<% } %>
+
+<!-- Login Form -->
+<div class="container pt-5 mt-0">
+  <div class="row w-100">
+    <h1 class="text-center mb-4">Login to StayNest</h1>
+    <div class="col-md-6 offset-md-3">
+      <form action="/login" method="POST" class="needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" id="username" name="username" required class="form-control" />
+          <div class="invalid-feedback">Please enter your username.</div>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" name="password" required class="form-control" />
+          <div class="invalid-feedback">Please enter your password.</div>
+        </div>
+        <div class="d-grid">
+          <button class="btn btn-primary">Login</button>
+        </div>
+      </form>
+      <div class="text-center mt-3">
+        <p>Don't have an account? <a href="/register">Register here</a></p>
+      </div>
+    </div>
+  </div>
+</div>

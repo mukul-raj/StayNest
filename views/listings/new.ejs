@@ -1,0 +1,79 @@
+<% layout("/layouts/boilerplate") %>
+
+<br />
+<div class="row">
+    <div class="col-8 offset-2">
+    <h1>Create New Listing</h1>
+    <br />
+
+    <form action="/listings" method="POST" class="needs-validation" novalidate enctype="multipart/form-data">
+        <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" id="title" name="listing[title]" required class="form-control" />
+        <div class="invalid-feedback">Please enter a title.</div>
+        <div class="valid-feedback">Looks good</div>
+        </div>
+
+        <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea id="description" name="listing[description]" rows="4" required class="form-control"></textarea>
+        <div class="invalid-feedback">Please enter a description.</div>
+        <div class="valid-feedback">Description is OK</div>
+        </div>
+
+        <div class="row">
+        <div class="mb-3 col-md-4">
+            <label for="price" class="form-label">Price (INR)</label>
+            <input id="price" name="listing[price]" required class="form-control" />
+            <div class="invalid-feedback">Please enter a valid price.</div>
+            <div class="valid-feedback">Price OK</div>
+        </div>
+
+        <div class="mb-3 col-md-8">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" id="country" name="listing[country]" required class="form-control" />
+            <div class="invalid-feedback">Please enter a country.</div>
+            <div class="valid-feedback">Done</div>
+        </div>
+        </div>
+
+        <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" id="location" name="listing[location]" required class="form-control" />
+        <div class="invalid-feedback">Please enter a location.</div>
+        <div class="valid-feedback">Done</div>
+        </div>
+
+        <div class="mb-3">
+        <label for="image">Upload Image</label>
+        <input type="file" id="image" name="listing[image]" class="form-control" />
+        required
+        </div>
+
+        <button type="submit" class="btn btn-dark add-btn">Create Listing</button>
+        <br /><br />
+    </form>
+    </div>
+</div>
+
+<script>
+(() => {
+    "use strict";
+    const forms = document.querySelectorAll(".needs-validation");
+
+    Array.from(forms).forEach((form) => {
+        form.addEventListener(
+        "submit",
+        (event) => {
+            if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+            }
+            form.classList.add("was-validated");
+        },
+        false
+        );
+    });
+})();
+</script>
+</body>
