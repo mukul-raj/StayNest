@@ -1,30 +1,30 @@
 # StayNest 🏨
 
-StayNest is a modern, full-stack hotel and vacation rental booking platform that allows users to browse, book, and manage accommodations easily. Designed to offer seamless travel planning for both hosts and guests, StayNest aims to simplify the lodging experience.
+**StayNest** is a full-stack web application built with the MERN stack (MongoDB, Express.js, Node.js) using **EJS** templating on the frontend. It provides a seamless platform for users to browse and book hotels or homestays, and for hosts/admins to manage listings. 
+
+Deployed on **Render** and uses **MongoDB Atlas** for cloud database management.
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend**: EJS, JavaScript, CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB Atlas
+- **API**: RESTful services using MVC architecture
+- **Testing**: Hoppscotch
+- **Deployment**: Render
+
+---
 
 ## ✨ Features
 
-- 🔍 Filter listings by location, price, amenities, and availability
-- 👤 User authentication (register/login)
-- 🗓️ Booking system with date picker
-- ✍️ Review and rating system
-
-## 🚀 Tech Stack
-
-### Frontend
-- HTML
-- Bootstrap CSS 
-- Redux / Context API for state management
-
-### Backend
-- Node.js + Express.js
-- MongoDB 
-- JWT for authentication
-
-### Other Tools
-- Stripe API for payments
-- Mongodb ATLAS
-- Cloudinary 
-- Render (optional for auth or hosting)
+- 🏨 Hotel/homestay listings with images and details
+- 🔍 Search and filter functionality is comming soon (e.g., by city, price)
+- 👤 User authentication (login/register)
+- 🛠️ Admin panel to manage listings and bookings
+- 💬 feedback form
+- 🌐 REST API with Hoppscotch-tested endpoints
+- 📦 MVC project structure
 
 
